@@ -55,7 +55,7 @@ The dataset contains measurements computed from digitized images of breast mass 
 
 ## Model Performance
 
-* Accuracy: **98.24%** *(Replace this with your actual accuracy.)*
+* Accuracy: **98.24%** 
 
 ## Installation
 
