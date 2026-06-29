@@ -1,88 +1,86 @@
-# Breast Cancer Prediction
+# Breast Cancer Prediction using Logistic Regression
 
 ## Project Overview
 
-This project predicts whether a breast tumor is **Malignant (M)** or **Benign (B)** using machine learning.
+This project predicts whether a breast tumor is **Malignant (M)** or **Benign (B)** using the Breast Cancer Wisconsin (Diagnostic) dataset. A Logistic Regression model is trained on various tumor characteristics to classify the diagnosis.
 
 ## Dataset
 
-Dataset: Breast Cancer Wisconsin (Diagnostic)
+The dataset contains measurements computed from digitized images of breast mass cell nuclei.
 
-Target Variable:
-- diagnosis
-  - M = Malignant
-  - B = Benign
+**Target Variable:**
 
-Features include:
-- radius_mean
-- texture_mean
-- perimeter_mean
-- area_mean
-- smoothness_mean
-- compactness_mean
-- concavity_mean
-- symmetry_mean
-- fractal_dimension_mean
-- and other derived measurements.
+* `diagnosis`
+
+  * `M` = Malignant
+  * `B` = Benign
+
+**Features include:**
+
+* radius_mean
+* texture_mean
+* perimeter_mean
+* area_mean
+* smoothness_mean
+* compactness_mean
+* concavity_mean
+* concave points_mean
+* symmetry_mean
+* fractal_dimension_mean
+* and their corresponding standard error (`_se`) and worst (`_worst`) values.
 
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
 
 ## Project Workflow
 
-1. Load Dataset
-2. Data Cleaning
-3. Exploratory Data Analysis
-4. Feature Selection
-5. Train-Test Split
-6. Model Training
-7. Model Evaluation
-8. Prediction
+1. Load the dataset
+2. Data preprocessing and cleaning
+3. Exploratory Data Analysis (EDA)
+4. Feature selection
+5. Train-test split
+6. Train a Logistic Regression model
+7. Evaluate the model using accuracy and confusion matrix
+8. Make predictions
 
-## Models Used
+## Model Used
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Support Vector Machine
+* Logistic Regression
 
-## Accuracy
+## Model Performance
 
-Example:
-
-| Model | Accuracy |
-|--------|----------|
-| Logistic Regression | 96% |
-| Random Forest | 98% |
+* Accuracy: **98.24%** *(Replace this with your actual accuracy.)*
 
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/Breast-Cancer-Prediction.git
+git clone https://github.com/koustav-nandi2005/Breast-Cancer-ML-.git
 
-cd Breast-Cancer-Prediction
+cd Breast-Cancer-ML-
 
 pip install -r requirements.txt
 ```
 
 ## Run
 
+If using a Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Or, if you have a Python script:
+
 ```bash
 python train.py
 ```
 
-or
-
-```bash
-streamlit run app.py
-```
-
 ## Author
 
-Your Name
+Koustav Nandi
